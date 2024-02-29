@@ -1,0 +1,38 @@
+.option {
+  border: none;
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  align-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.option-logo {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #acc2f4;
+  border: 10px solid #bfd2ff;
+  padding: 5px;
+  color: #002e96;
+  font-weight: 1000;
+}
+
+.option-text {
+  padding-left: 2rem;
+}
+
+.option-primary-text {
+  color: #002e96;
+  font-size: 1.15rem;
+  margin: 5px 0px;
+}
+
+.option-secondary-text {
+  color: #667085;
+  margin: 0px;
+  font-weight: 500;
+}

@@ -1,0 +1,136 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 100vw;
+  height: 80vh;
+}
+
+.filler-over-login-page {
+  font-family: "Roboto Serif", serif;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.login-form-itself {
+  display: flex;
+  justify-content: stretch;
+  width: 95%;
+  flex-direction: column;
+}
+
+.login-form-heading {
+  font-family: "Roboto Serif", serif;
+  margin: auto;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+.login-textbox {
+  margin: 1rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #e7e6dd;
+  border: 0.5px solid #12263a;
+  border-radius: 1rem;
+}
+
+.submit-button {
+  width: 100px;
+  max-height: fit-content;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  border: 0.5px solid #3a1212;
+  background-color: #8a0000;
+  color: #fff;
+  margin: 1rem;
+  height: 100%;
+}
+
+.submit-button:hover {
+  background-color: #8a0000;
+}
+
+.submit-button-coverup {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* mobile screens */
+@media only screen and (min-width: 168px) and (max-width: 520px) {
+  .login-form-div {
+    width: 100vw;
+    height: 100vh;
+    margin-right: 0vh;
+    border-radius: 0px;
+  }
+  .submit-button-coverup {
+    height: 50px;
+  }
+  .submit-button {
+    margin: 1rem;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .filler {
+    z-index: -1;
+    width: 0%;
+  }
+
+  .submit-button-coverup {
+    align-items: center;
+    justify-content: stretch;
+  }
+}
+
+/* tablet screens */
+@media only screen and (min-width: 521px) and (max-width: 1300px) {
+  .login-form-div {
+    width: 100vw;
+    height: 100vh;
+    margin-right: 0vh;
+    border-radius: 0px;
+  }
+  .filler {
+    z-index: -1;
+    width: 0%;
+  }
+  .filler-over-login-page {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+  .submit-button {
+    margin: auto;
+    width: auto;
+  }
+  .submit-button-coverup {
+    align-items: center;
+    justify-content: stretch;
+  }
+}

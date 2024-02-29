@@ -1,0 +1,78 @@
+.bolt-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ufo-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.ufo {
+  animation: rotate-animation 2s infinite linear;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  width: 100vw;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes changeMargin {
+  0% {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  25% {
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+  }
+  75% {
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+  }
+  100% {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(35deg);
+  }
+  75% {
+    transform: rotate(-35deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

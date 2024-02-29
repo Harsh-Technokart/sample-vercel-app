@@ -1,0 +1,20 @@
+.back-button {
+  border: 1px solid #002e96;
+  width: 15px;
+  height: 15px;
+  padding: 0.5rem;
+  padding-right: 0.4rem;
+  padding-left: 0.6rem;
+  border-radius: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #002e96;
+  font-size: 5px;
+}
+
+.back-button-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 80vw;
+}

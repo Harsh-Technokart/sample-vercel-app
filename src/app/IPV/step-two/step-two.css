@@ -1,0 +1,39 @@
+.parent {
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: auto;
+}
+
+.root {
+  width: auto;
+  border-radius: 16px;
+  background-color: white;
+  padding: 2rem;
+  filter: drop-shadow(0px 2px 5px #b4b4b4);
+}
+
+.root-title {
+  margin: 0px auto 20px auto;
+}
+
+.root-subtitle {
+  color: #667085;
+}
+
+.back-button {
+  border: 1px solid #002e96;
+  width: 15px;
+  height: 15px;
+  padding: 0.5rem;
+  padding-right: 0.4rem;
+  padding-left: 0.6rem;
+  border-radius: 50%;
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+  color: #002e96;
+  font-size: 5px;
+}

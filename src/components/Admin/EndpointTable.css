@@ -1,0 +1,198 @@
+.endpoint-table {
+  width: 80vw;
+  border-collapse: collapse;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.endpoint-table::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.endpoint-table th,
+.endpoint-table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  max-width: 30vw;
+  overflow: clip;
+}
+
+.endpoint-table th {
+  background-color: #f2f2f2;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 50vw;
+}
+
+.modal-title {
+  color: #1e1e1e;
+}
+
+.edit-capability-modal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.capability-name-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 25%;
+}
+
+.endpoint-URL-input-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.endpoint-URL-input-container label,
+.capability-name-input-container label {
+  margin-bottom: 0.5rem;
+}
+
+.capability-name-textbox {
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #e7e6dd;
+  border: 0.5px solid #12263a;
+  color: #1e1e1e;
+  border-radius: 8px;
+}
+
+.endpoint-URL-textbox {
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #e7e6dd;
+  border: 0.5px solid #12263a;
+  color: #000000;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.MuiButton-contained.update-url-button {
+  background: green;
+  border-radius: 8px;
+}
+
+.MuiButton-contained.update-url-button:hover {
+  background-color: darkgreen;
+}
+
+.MuiButton-contained.close-button {
+  background: red;
+  border-radius: 8px;
+}
+
+.MuiButton-contained.close-button:hover {
+  background-color: darkred;
+}
+
+.logout-wrapper {
+  width: 90vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-content: flex-end;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: inherit;
+  margin: 1rem;
+}
+
+.logout-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d3d3d3;
+  background-color: #ff2525;
+  color: white;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 168px) and (max-width: 520px) {
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 16px;
+    width: 85vw;
+  }
+
+  .modal-title {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .edit-capability-modal {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+
+  .capability-name-textbox {
+    margin: 0%;
+  }
+
+  .capability-name-input-container {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .MuiButton-contained.update-url-button {
+    margin-top: 1rem;
+  }
+
+  .endpoint-URL-input-container label,
+  .capability-name-input-container label {
+    font-size: 0.9rem;
+  }
+}
