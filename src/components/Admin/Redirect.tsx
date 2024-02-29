@@ -9,7 +9,7 @@ function Redirect() {
     if (creds) {
       router.push("/admin/configuration");
     }
-  }, [creds]);
+  }, [router]);
   return <></>;
 }
 
