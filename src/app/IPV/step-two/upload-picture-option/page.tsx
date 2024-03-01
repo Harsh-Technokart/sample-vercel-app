@@ -26,7 +26,7 @@ function UploadPicture() {
 
   return (
     <div className="upload-parent">
-      <Backbutton redirect="../IPV/step-two" />
+      <Backbutton redirect="../step-two" />
       <div {...getRootProps()}>
         {preview ? (
           <Preview preview={preview} setPreview={setPreview} />
