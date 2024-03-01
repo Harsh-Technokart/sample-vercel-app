@@ -22,7 +22,7 @@ function UploadPicture() {
         URL.revokeObjectURL(preview);
       }
     };
-  }, [preview, acceptedFiles]);
+  }, [acceptedFiles]);
 
   return (
     <div className="upload-parent">
