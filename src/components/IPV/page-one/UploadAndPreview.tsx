@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import UploadDiv from "./upload-div";
 import PreviewDiv from "./preview-div";

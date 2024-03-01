@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 function PreviewDiv(props: { isLoading: Boolean; preview: string }) {
